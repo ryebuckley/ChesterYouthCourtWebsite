@@ -20,6 +20,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: don't run with debug turned on in production!
+ # SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = 'lyeo-kt_rx#ey6!ml$r^e(j6z_=j06)$oy!jz+#0zxiy5p5urm'
 DEBUG = True
 
 ALLOWED_HOSTS = []
@@ -52,7 +54,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': ['CYCWebsite/templates'],
-        'APP_DIRS': True, 
+        'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
