@@ -8,3 +8,6 @@ def faq(request):
 
 def about(request):
     return render(request, 'about.html')
+
+def training(request):
+    return render(request, 'training.html')
